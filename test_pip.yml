@@ -1,0 +1,20 @@
+---
+- name: test pip local
+  hosts:
+    - mGroup
+    - bGroup
+
+  tasks:
+    - name: ansible pip
+      pip:
+        name: ansible
+        executable: /usr/local/bin/pip3
+
+- name: test pip remote
+  hosts: localhost
+
+  tasks:
+    - name: ansible pip
+      pip:
+        name: ansible
+ 

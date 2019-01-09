@@ -1,0 +1,8 @@
+[localGroup]
+localhost ansible_connection=local
+
+[mGroup]
+madalyn ansible_connection=ssh
+
+[bGroup]
+beth ansible_connection=ssh 
